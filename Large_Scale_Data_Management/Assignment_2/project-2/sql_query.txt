@@ -1,0 +1,16 @@
+CREATE KEYSPACE IF NOT EXISTS spotify WITH REPLICATION = { 'class': 'SimpleStrategy', 'replication_factor': 1 };
+
+USE spotify;
+CREATE TABLE IF NOT EXISTS records (
+    name TEXT,
+    timestamp TIMESTAMP,
+    movie TEXT,
+    user_rating INT,
+    director TEXT,
+    country TEXT,
+    release_year INT,
+    duration INT,
+    PRIMARY KEY (name, timestamp)
+);
+
+SELECT * FROM spotify.records;

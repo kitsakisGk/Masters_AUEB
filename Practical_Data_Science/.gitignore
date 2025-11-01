@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (large CSVs)
+*.csv
+*.csv.gz
+!city_populations.csv
+!estat_tin00175_filtered_en.csv.gz
+
+# JSON data files
+*.json
+!package.json
+
+# Compressed files
+*.zip
+*.tar.gz
+
+# Excel files
+*.xlsx
+*.xls
+
+# Reports
+*.pdf
+*.docx

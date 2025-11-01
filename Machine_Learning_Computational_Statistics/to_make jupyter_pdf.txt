@@ -1,0 +1,7 @@
+πρωτα κανω cd στο path που βρίσκεται το notebook. 
+ex: cd C:\Users\admin\OneDrive\Υπολογιστής\Master AUEB DS\Machine_Learning_Computational_Statistics\Homework_2
+
+Κάνω : jupyter nbconvert --to html <your-notebook-name>.ipynb 
+
+Τέλος το ανοιγώ στο chrome. Double click the html file. Πατάω ctrl + p και το κάνω save as pdf. 
+

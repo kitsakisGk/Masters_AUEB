@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+*.zip
+*.pdf
+
+# Data files (keep small datasets, ignore large ones)
+*.dat
+!stanweb.dat
+
+# MATLAB
+*.m~
+*.asv
+
+# Output files
+*.png
+*.jpg
+*.jpeg
+!Basis_vectors_GS.png
+!heatmap.png
+!snp.png

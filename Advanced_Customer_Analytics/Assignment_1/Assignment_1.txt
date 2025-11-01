@@ -1,0 +1,41 @@
+Στοιχεία εργασίας
+Τίτλος
+Interpretable Predictions - 2025
+Περιγραφή
+Step 1:
+Find (or scrape) an online dataset that encodes customer/user preferences with respect to various entities (e.g. products, services). Examples include:
+
+
+* datasets with reviews/ratings,
+
+* sales-based datasets,
+
+* clickthrough (CTR) datasets,
+
+* datasets that encode user interactions with different pieces of content (e.g. listening spotify songs, liking/sharing posts or IG or Twitter). 
+
+
+The dataset should definitely include descriptive attributes for the entities. At least one of the entity attributes should be numeric. At least one should be categorical. At least one should be free text.
+
+ 
+
+For the users, it should have either (ideally) descriptive attributes or (at least) a history of their past interactions with entities.
+
+ 
+
+Step 2:
+
+Record your name and dataset here(Excel file). You can't pick a dataset that has already been recorded by another student. 
+
+
+Step 3:
+
+Create a Colab Notebook that trains a binary classifier that can predict if a specific user will be interested in a specific entity. The notebook should implement (at least) the following functions:
+
+* A function that reads a training dataset and trains the binary predictor
+
+* A function that accepts a user and an entity and returns the binary prediction.  If the prediction is negative, the function should use counterfactuals to suggest how the entity would have to change to yield a positive prediction. Constrain your counterfactuals to things that can be reasonably changed.
+
+ 
+
+The deliverables are links to the Colab notebook and to the scraped dataset 

@@ -1,0 +1,28 @@
+# R
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+
+# RStudio
+.Rproj.user/
+
+# Temporary files
+*~
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PDFs
+*.pdf
+
+# Images (exam scans)
+*.jpg
+*.jpeg
+*.png
+
+# Data backups
+*.bak

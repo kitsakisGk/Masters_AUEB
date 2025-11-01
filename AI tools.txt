@@ -1,0 +1,35 @@
+Alteryx AiDIN, Haptik’s chatbot, DataRobot AI Platform, Palantir AIP, Google Analytics 4, hal9, designerbot
+
+Data Augmentation and Generation	
+-DataRobot
+-Colab
+-ChatGPT
+-Bard
+-MOSTLY.AI
+-universaldata
+
+Data Preparation	
+-ChatCSV
+-Tomat.AI
+
+Data Querying	
+-SQLthroughAI
+-dbsensei
+
+Data Insights through QnA	
+-Akkio
+
+Data Insights	
+-hal9
+-ChatGPT
+
+Data Visualization	
+-Einblick
+-Coulmn.ai
+-Akkio
+
+Dashboarding	
+-ChartPixel
+
+Storyteling	
+-Akkio

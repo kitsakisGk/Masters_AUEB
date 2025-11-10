@@ -99,12 +99,66 @@ Knowledge graph construction and reasoning with Large Language Models
 
 ## 🛠️ Technologies & Tools
 
-- **Languages:** Python, R, SQL
-- **ML/DL:** scikit-learn, TensorFlow, PyTorch, Keras
-- **Data Processing:** pandas, NumPy, SciPy, Spark
-- **Visualization:** matplotlib, seaborn, Plotly, ggplot2
-- **NLP:** NLTK, spaCy, transformers
-- **Tools:** Jupyter, Git, Docker
+### Languages
+- **Python 3.8+** - Primary programming language
+- **R 4.0+** - Statistical computing
+- **Java 11+** - Big data processing
+- **SQL/CQL** - Database queries
+- **Scala** - Spark applications
+
+### ML/DL Frameworks
+- **scikit-learn** - Machine learning algorithms
+- **PyTorch** - Deep learning framework
+- **TensorFlow/Keras** - Neural networks
+- **XGBoost** - Gradient boosting
+- **Transformers (Hugging Face)** - Pre-trained models & NLP
+- **PEFT/LoRA** - Parameter-efficient fine-tuning
+
+### Data Processing
+- **pandas** - Data manipulation
+- **NumPy** - Numerical computing
+- **SciPy** - Scientific computing
+- **Apache Spark (PySpark)** - Distributed computing
+- **Altair** - Declarative visualization
+
+### Visualization
+- **Matplotlib** - Static plotting
+- **Seaborn** - Statistical visualizations
+- **Plotly** - Interactive plots
+- **ggplot2** - R graphics
+
+### NLP & Text Analytics
+- **NLTK** - Natural language toolkit
+- **spaCy** - Industrial NLP
+- **Gensim** - Topic modeling & Word2Vec
+- **BERT, GPT** - Transformer models
+
+### Big Data & Databases
+- **Apache Kafka** - Message streaming
+- **Apache Cassandra** - NoSQL database
+- **Apache Hadoop MapReduce** - Batch processing
+- **MySQL/PostgreSQL** - Relational databases
+- **Neo4j** - Graph database
+- **Cypher** - Graph query language
+
+### Explainable AI
+- **LIME** - Local interpretable explanations
+- **SHAP** - Shapley additive explanations
+- **DiCE** - Counterfactual explanations
+- **Anchors** - Anchor explanations
+
+### DevOps & Tools
+- **Docker/Docker Compose** - Containerization
+- **Vagrant** - Development environments
+- **Git** - Version control
+- **Jupyter Notebook** - Interactive computing
+
+### Specialized Libraries
+- **NetworkX** - Graph analysis
+- **mlxtend** - Association rule mining (Apriori)
+- **BeautifulSoup/Selenium** - Web scraping
+- **statsmodels** - Statistical modeling
+- **cvxpy** - Convex optimization
 
 ## 📫 Contact
 

@@ -1,0 +1,37 @@
+Τίτλος
+[2025-2026 PT] Project I
+Περιγραφή
+
+Data refer to Pisa competition 2018.
+The data can be seen in the attached R workspace
+see also https://www.oecd.org/pisa/data/2018database/
+I have extracted part of the data for convenience.
+
+The scope of the project is to use the data (and perhaps any other relevant and useful data)
+to study
+- the position of Greece within the participating countries
+- the gender gap in different countries
+
+You have to deliver
+- A presentation (powerpoint or pdf) with at least 10 static visualizations, preferably in R but you
+can also use Pyhton,
+to study the data and create your opinion about the topic in a
+full and convincing manner. No interactive plots can be produced in this part.
+The presentation must be self-contained: suppose that you will present
+it in front of an audience of mixed knowledge on the topic.
+- at least 2 interactive plots using Tableau or R-shiny (or similar Python library) and a short presentation
+(powerpoint or pdf) explaining the interactive capabilities that you offer.
+- The R/Python code, Tableau files and data files needed to generate all the plots.
+
+For grading we will consider
+the correctness
+the variety
+the originality
+the execution
+the presentation
+of your plots
+
+Deadline: 7/12/2025
+
+Αρχείο
+pisa2018 (3).rar

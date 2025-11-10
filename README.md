@@ -40,6 +40,15 @@ Customer segmentation, RFM analysis, predictive modeling, and customer lifetime 
 ![pandas](https://img.shields.io/badge/pandas-grey.svg)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-orange.svg)
 
+### [Data Visualization](Data_visualization/)
+Advanced visualization techniques and interactive dashboards - PISA 2018 Analysis
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![R](https://img.shields.io/badge/R-4.0+-276DC3.svg)
+![matplotlib](https://img.shields.io/badge/matplotlib-grey.svg)
+![seaborn](https://img.shields.io/badge/seaborn-blue.svg)
+![Plotly](https://img.shields.io/badge/Plotly-grey.svg)
+
 ### [Large Scale Data Management](Large_Scale_Data_Management/)
 Big data processing, distributed systems, and database management
 

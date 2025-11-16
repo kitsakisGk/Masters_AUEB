@@ -1,0 +1,20 @@
+Στοιχεία εργασίας
+Τίτλος
+HW2: Visual data predictions
+Περιγραφή
+* Find a dataset that includes at least 5k captioned images. Declare it Here.  Pick a dataset with diverse images from various domains. 
+
+* You can't use a dataset used by another person.
+* Create a Colab notebook with a function called topic_miner() that:
+
+       > Reads your dataset and uses bertopic to identify multimodal topics (https://maartengr.github.io/BERTopic/getting_started/multimodal/multimodal.html#images-only) as we saw in class.
+       > Labels each image with the topic that was assigned to it by Bertopic  
+
+* Add a second function called predict() that:
+
+       > Accepts the labeled dataset produced from the first function.
+
+       > Splits the dataset into training/testing (70-30%)
+
+       > trains/tests a classifier using the bertopic labels as classes and the image/captions as feature sources. Try to train the best model possible. 
+       > Returns the confusion matrix of your trained model

@@ -34,7 +34,9 @@ Advanced_Customer_Analytics/
 ├── Week_2/              # RFM Analysis & Segmentation
 ├── Week_3/              # Predictive Modeling
 ├── Week_4/              # Advanced Topics
-├── Assignment_1/        # Comprehensive Customer Analysis Project
+├── Week_5/              # Multimodal Topic Mining with BERTopic
+├── Assignment_1/        # Interpretable Predictions - Clothing Recommendations
+├── Assignment_2/        # Visual Data Predictions - Flickr30k Topic Mining
 └── README.md
 ```
 
@@ -60,12 +62,36 @@ Advanced_Customer_Analytics/
 - Attribution analysis
 - Recommendation systems
 
+### Week 5: Multimodal Topic Mining
+- BERTopic for visual and text data
+- CLIP embeddings for multimodal analysis
+- Image-caption topic discovery
+- FAGE brand case study
+
+### Assignment 1: Interpretable Predictions
+- Women's Clothing E-Commerce dataset (23,486 reviews)
+- Recommendation prediction using XGBoost (82.7% accuracy)
+- Interpretable AI: DiCE counterfactuals, LIME, SHAP, Anchors
+- Feature importance analysis
+
+### Assignment 2: Visual Data Predictions
+- Flickr30k dataset (31,783 captioned images)
+- Multimodal topic mining with BERTopic + CLIP
+- Topic classification with 97.6% accuracy (Logistic Regression)
+- Image-text semantic alignment
+
 ## 🛠️ Installation
 
 ```bash
-# Install dependencies
+# Install core dependencies
 pip install pandas numpy scikit-learn matplotlib seaborn jupyter
 pip install lifetimes statsmodels
+
+# For Assignment 1 (Interpretable AI)
+pip install dice-ml xgboost lime shap
+
+# For Assignment 2 & Week 5 (Multimodal Topic Mining)
+pip install bertopic[vision] kagglehub
 ```
 
 ## 📊 Technologies Used
@@ -75,6 +101,11 @@ pip install lifetimes statsmodels
 - **scikit-learn:** Machine learning algorithms
 - **Matplotlib/Seaborn:** Visualization
 - **lifetimes:** CLV modeling
+- **BERTopic:** Topic modeling with transformers
+- **CLIP:** Multimodal embeddings (OpenAI)
+- **XGBoost:** Gradient boosting
+- **DiCE, LIME, SHAP:** Interpretable AI
+- **kagglehub:** Dataset management
 - **Jupyter Notebook:** Interactive analysis
 
 ## 📚 Key Concepts
@@ -85,6 +116,10 @@ pip install lifetimes statsmodels
 - Churn Prediction
 - A/B Testing
 - Cohort Analysis
+- Multimodal Topic Mining
+- CLIP Embeddings for Image-Text Alignment
+- Interpretable AI (Counterfactuals, LIME, SHAP)
+- BERTopic for Visual Data
 
 ---
 

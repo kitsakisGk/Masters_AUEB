@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "source": "UCI Health News - July 2024",
+    "text": "UCI Health has become the first Southern California health system to deploy photon-counting computed tomography technology. The groundbreaking equipment was installed at the Chao Family Comprehensive Cancer Center and Ambulatory Care building at UCI Health — Irvine, with initial patient scans beginning July 16, 2024. According to Dr. Vahid Yaghmai, chair of radiological sciences, this technology enables clinicians to evaluate the body with very high-resolution images obtained in less than a second, compared to much longer studies performed with conventional scanners. The scanner serves multiple specialties within UCI Health's comprehensive cancer center, including oncology, neurosciences, digestive health, and orthopedic services.",
+    "ground_truth": {
+      "Equipment": ["photon-counting computed tomography technology", "conventional scanners", "scanner"],
+      "Department": ["radiological sciences", "oncology", "neurosciences", "digestive health", "orthopedic services"]
+    }
+  },
+  {
+    "id": 2,
+    "source": "Northwestern Medical Center Press Release - 2024",
+    "text": "Northwestern Medical Center in St. Albans is replacing its CT equipment this summer with a new Canon system. The current scanner, installed in 2011 and upgraded in 2015, will be replaced after approximately two months of construction. The Diagnostic Imaging department will operate a mobile CT unit during construction to maintain uninterrupted patient services. The upgrade includes expanding the CT suite, adding two triage rooms, and creating additional waiting space. The new system offers faster imaging speeds, enhanced image quality, and advanced software capabilities. Features include dose reduction technology and metal artifact reduction. The equipment supports fluoroscopy-guided procedures.",
+    "ground_truth": {
+      "Equipment": ["CT equipment", "Canon system", "scanner", "mobile CT unit"],
+      "Department": ["Diagnostic Imaging"]
+    }
+  },
+  {
+    "id": 3,
+    "source": "UNM Hospital News - February 2024",
+    "text": "UNM Hospital's Critical Care Tower features cutting-edge technology across multiple departments. The Interventional Platform on Level 3 houses four catheterization labs, six interventional radiology suites, 18 operating rooms, and 73 post-anesthesia care rooms. Two hybrid-capable ORs will enable minimally invasive vascular and neurological procedures using image-guided technology. CT scanners will expand from five to ten units, while MRI machines will increase from two to four. A portable bedside CT scanner will enable critical procedures for severely ill patients. The 96-bed adult ICUs on Levels 5-6 will serve neurological, cardiothoracic, trauma, and acute medical patients. Two procedural rooms will feature critical care fluoroscopy and transesophageal echocardiography for emergency cardiac interventions.",
+    "ground_truth": {
+      "Equipment": ["catheterization labs", "CT scanners", "MRI machines", "portable bedside CT scanner", "critical care fluoroscopy", "transesophageal echocardiography"],
+      "Department": ["interventional radiology", "ICU", "ICUs"]
+    }
+  },
+  {
+    "id": 4,
+    "source": "St. Peter's Hospital Press Release - October 2024",
+    "text": "St. Peter's Hospital became the first facility in the Capital Region and Trinity Health network to acquire the da Vinci 5 robotic surgical system. After three weeks of operation, the hospital completed over 30 procedures with positive outcomes. The system features 3D high-definition visualization, Force Feedback technology, and a redesigned surgical console with improved ergonomics. It offers enhanced precision and dexterity for complex procedures. Procedures encompass general surgery, colorectal, gynecology, gynecological oncology, hepatobiliary and pancreatic surgery, urology, bariatric, and thoracic surgery. St. Peter's Health Partners now operates seven da Vinci robots across St. Peter's and Samaritan hospitals.",
+    "ground_truth": {
+      "Equipment": ["da Vinci 5 robotic surgical system", "surgical console", "da Vinci robots"],
+      "Department": ["general surgery", "colorectal", "gynecology", "gynecological oncology", "urology", "bariatric", "thoracic surgery"]
+    }
+  },
+  {
+    "id": 5,
+    "source": "UNM Sandoval Regional Medical Center News",
+    "text": "The University of New Mexico Sandoval Regional Medical Center has acquired two advanced surgical robotic systems to enhance surgical capabilities. The Mako surgical robot features a robotic arm equipped with optical sensors and a bone saw connected to a console. Surgeons create 3D models from CT scans prior to procedures. The Mako allows precise cuts for knee replacements, hip replacements, and orthopedic procedures. The Da Vinci Xi surgical robot, operational at SRMC since March, features four robotic arms controlled from a console. Surgeons use hand and foot controls to manipulate instruments with 360-degree range of motion. Da Vinci Xi is used for general surgery, hernia repairs, gallbladder procedures, bariatric surgery, urology procedures, gynecological procedures, and acute care surgery.",
+    "ground_truth": {
+      "Equipment": ["surgical robotic systems", "Mako surgical robot", "robotic arm", "bone saw", "console", "CT scans", "Da Vinci Xi surgical robot", "robotic arms"],
+      "Department": ["general surgery", "bariatric surgery", "urology", "gynecological", "acute care surgery"]
+    }
+  },
+  {
+    "id": 6,
+    "source": "HCA Florida Englewood Hospital News",
+    "text": "HCA Florida Englewood Hospital completed a $4.4 million capital project to build a new diagnostic imaging suite. The centerpiece of the project is a state-of-the-art magnetic resonance imaging machine. Patients will have a better MRI experience with faster scan times, more space inside the machine and less noise. The new MRI delivers 50% faster image scanning capability and enhanced image quality. The equipment supports diagnosis across multiple areas including brain, spine, abdominal, prostate, and musculoskeletal imaging. The hospital also invested in upgraded nuclear medicine technology designed to increase scan efficiency by approximately 25%. This advancement supports detection of cancer, cardiac disease, gastrointestinal, endocrine, and neurological conditions.",
+    "ground_truth": {
+      "Equipment": ["magnetic resonance imaging machine", "MRI", "nuclear medicine technology"],
+      "Department": []
+    }
+  },
+  {
+    "id": 7,
+    "source": "Children's Medical Center Plano - December 2024",
+    "text": "Children's Health in Dallas opened a 395,000-square-foot new patient tower at Children's Medical Center Plano in December 2024. The new tower adds 140 universal and ICU-capable inpatient beds, increasing the total to 212. The Children's Medical Center Plano tower features expansive digital integration including bedside tablets, digital signage and a digital front door. It includes a state-of-the-art microgrid ensuring uninterrupted care during power outages. The facility serves the Pediatrics department and includes specialized ICU capabilities.",
+    "ground_truth": {
+      "Equipment": ["inpatient beds", "bedside tablets", "digital signage", "microgrid"],
+      "Department": ["Pediatrics", "ICU"]
+    }
+  },
+  {
+    "id": 8,
+    "source": "General Hospital Equipment Update",
+    "text": "The hospital's Emergency Department recently upgraded its diagnostic capabilities with two new portable ultrasound devices and an advanced ECG monitoring system. The Radiology team collaborated with Emergency to ensure seamless integration. Meanwhile, the Cardiology department received three new echocardiography machines for cardiac imaging. The ICU installed five new ventilators to support critical care patients. The Surgery department's operating rooms were equipped with new anesthesia machines and surgical monitors.",
+    "ground_truth": {
+      "Equipment": ["portable ultrasound devices", "ECG monitoring system", "echocardiography machines", "ventilators", "anesthesia machines", "surgical monitors"],
+      "Department": ["Emergency Department", "Radiology", "Cardiology", "ICU", "Surgery"]
+    }
+  },
+  {
+    "id": 9,
+    "source": "Regional Medical Center Press Release",
+    "text": "Regional Medical Center announced significant equipment investments across multiple departments. The Oncology department received a new linear accelerator for radiation therapy treatments. Radiology installed an upgraded mammography system and a new X-ray machine. The Neurology department now has access to advanced EEG equipment and nerve conduction study devices. The hospital's Orthopedics team acquired a new fluoroscopy system for guided procedures. These investments totaling $8 million demonstrate the hospital's commitment to advanced patient care.",
+    "ground_truth": {
+      "Equipment": ["linear accelerator", "mammography system", "X-ray machine", "EEG equipment", "nerve conduction study devices", "fluoroscopy system"],
+      "Department": ["Oncology", "Radiology", "Neurology", "Orthopedics"]
+    }
+  },
+  {
+    "id": 10,
+    "source": "University Hospital Technology Update",
+    "text": "University Hospital's Interventional Radiology suite received two new angiography systems for vascular procedures. The Gastroenterology department upgraded its endoscopy equipment with high-definition video systems. In the ICU, nurses now have access to advanced patient monitoring systems with central station displays. The Respiratory Therapy team received new CPAP and BiPAP devices for non-invasive ventilation. The hospital's Pathology laboratory installed automated tissue processors and digital microscopy systems.",
+    "ground_truth": {
+      "Equipment": ["angiography systems", "endoscopy equipment", "high-definition video systems", "patient monitoring systems", "CPAP", "BiPAP devices", "automated tissue processors", "digital microscopy systems"],
+      "Department": ["Interventional Radiology", "Gastroenterology", "ICU", "Respiratory Therapy", "Pathology"]
+    }
+  },
+  {
+    "id": 11,
+    "source": "Community Hospital Equipment Acquisition",
+    "text": "Community Hospital's Emergency Department added a new trauma bay with advanced resuscitation equipment including defibrillators and crash carts. The Labor and Delivery unit received new fetal monitoring systems and infant warmers. The Physical Therapy department installed gait analysis equipment and therapeutic exercise machines. Meanwhile, the hospital's Central Sterile Processing department upgraded its sterilization equipment with new autoclaves. The Pharmacy implemented an automated medication dispensing system.",
+    "ground_truth": {
+      "Equipment": ["resuscitation equipment", "defibrillators", "crash carts", "fetal monitoring systems", "infant warmers", "gait analysis equipment", "therapeutic exercise machines", "sterilization equipment", "autoclaves", "automated medication dispensing system"],
+      "Department": ["Emergency Department", "Labor and Delivery", "Physical Therapy", "Central Sterile Processing", "Pharmacy"]
+    }
+  },
+  {
+    "id": 12,
+    "source": "Metropolitan Hospital Modernization",
+    "text": "Metropolitan Hospital completed a comprehensive modernization of its Surgical Services department. Eight operating rooms received new surgical lights, operating tables, and video tower systems. The Anesthesiology team acquired new ultrasound-guided regional anesthesia equipment. The Post-Anesthesia Care Unit installed new patient monitors and infusion pumps. Additionally, the hospital's Blood Bank received new blood storage refrigerators and platelet agitators. The Dialysis unit was equipped with new hemodialysis machines for renal patients.",
+    "ground_truth": {
+      "Equipment": ["surgical lights", "operating tables", "video tower systems", "ultrasound-guided regional anesthesia equipment", "patient monitors", "infusion pumps", "blood storage refrigerators", "platelet agitators", "hemodialysis machines"],
+      "Department": ["Surgical Services", "Anesthesiology", "Post-Anesthesia Care Unit", "Blood Bank", "Dialysis"]
+    }
+  }
+]

@@ -30,20 +30,42 @@ This course explores the integration of Knowledge Graphs with Large Language Mod
 
 ```
 Knowledge Graphs with LLM/
-├── Assignment_1/            # Knowledge graph construction project
-│   ├── data/                # Source documents
-│   ├── notebooks/           # Implementation notebooks
-│   └── graphs/              # Graph visualizations
+├── Assignment_1/            # Initial KG project setup
+├── Assignment_2/            # Hospital Resource Management KG Schema
+│   ├── hospital_setup.cypher
+│   ├── competency_queries.cypher
+│   ├── screenshots/
+│   └── Assignment2_Report.md
+├── Assignment_3/            # LLM-based Entity Extraction
+│   ├── Assignment_3_Entity_Extraction.ipynb
+│   ├── evaluation_dataset.json
+│   ├── evaluation_results.csv
+│   ├── Assignment3_Report.pdf
+│   └── README.md
 └── README.md
 ```
 
-## 🎯 Key Topics
+## 🎯 Assignments
 
 ### Assignment 1: Knowledge Graph Construction
 - Extract entities and relationships from text
 - Build knowledge graph using Neo4j
 - Implement graph queries with Cypher
 - Integrate LLM for entity disambiguation
+
+### Assignment 2: Hospital Resource Management KG Schema
+- Design semantically correct KG schema (7 node types, 7 relationship types)
+- Implement in Neo4j with constraints and indexes
+- Transform 12 competency questions into Cypher queries
+- Populate with realistic dummy data (120 nodes, 143 relationships)
+- **Tech Stack:** Neo4j AuraDB, Cypher, Graph visualization
+
+### Assignment 3: Knowledge Graph Population with LLM
+- LLM-based entity extraction (Equipment & Department entities)
+- Few-shot prompting with GPT-4o (no fine-tuning)
+- Evaluation on 12 real hospital texts (75% F1 score)
+- LLM-as-a-judge automated evaluation system
+- **Results:** 90% F1 for Equipment, 60% F1 for Departments
 
 ### Techniques Covered
 - Named Entity Recognition (NER)

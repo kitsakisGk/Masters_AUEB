@@ -18,3 +18,13 @@ HW2: Visual data predictions
 
        > trains/tests a classifier using the bertopic labels as classes and the image/captions as feature sources. Try to train the best model possible. 
        > Returns the confusion matrix of your trained model
+
+
+Καλησπέρα σας,
+
+
+Το Google Colab Notebook: 
+
+https://drive.google.com/file/d/1eO7M2kPUR2vqNPLnIBaWbc3z_vdQNm-z/view?usp=sharing
+Με εκτίμηση,
+Κιτσάκης Γιώργος

@@ -36,7 +36,7 @@ Advanced_Customer_Analytics/
 ├── Week_4/              # Advanced Topics
 ├── Week_5/              # Multimodal Topic Mining with BERTopic
 ├── Assignment_1/        # Interpretable Predictions - Clothing Recommendations
-├── Assignment_2/        # Visual Data Predictions - Flickr30k Topic Mining
+├── Assignment_2/        # Visual Data Predictions - Yu-Gi-Oh! Card Topic Mining
 └── README.md
 ```
 
@@ -75,10 +75,10 @@ Advanced_Customer_Analytics/
 - Feature importance analysis
 
 ### Assignment 2: Visual Data Predictions
-- Flickr30k dataset (31,783 captioned images)
+- Yu-Gi-Oh! Cards dataset (10,000+ trading cards with images and descriptions)
 - Multimodal topic mining with BERTopic + CLIP
-- Topic classification with 97.6% accuracy (Logistic Regression)
-- Image-text semantic alignment
+- Card archetype and theme classification
+- Image-text semantic alignment for trading cards
 
 ## 🛠️ Installation
 

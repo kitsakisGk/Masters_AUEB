@@ -95,6 +95,13 @@ Knowledge graph construction and reasoning with Large Language Models
 ![LLM](https://img.shields.io/badge/LLM-grey.svg)
 ![Neo4j](https://img.shields.io/badge/Neo4j-008CC1.svg)
 
+### [Social Network Analysis](Social_Network_Analysis/)
+Graph theory, centrality measures, and community detection algorithms
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Gephi](https://img.shields.io/badge/Gephi-0.10-orange.svg)
+![SNAP](https://img.shields.io/badge/SNAP-stanford-red.svg)
+
 ---
 
 ## 🛠️ Technologies & Tools
@@ -153,12 +160,25 @@ Knowledge graph construction and reasoning with Large Language Models
 - **Git** - Version control
 - **Jupyter Notebook** - Interactive computing
 
+### Graph Analysis & Networks
+- **Gephi 0.10** - Network visualization platform
+- **SNAP (Stanford Network Analysis Platform)** - Large-scale graph analysis
+- **NetworkX** - Python graph library
+- **Cypher** - Neo4j graph query language
+
+### RAG & Vector Databases
+- **FAISS** - Vector similarity search
+- **TinyLlama** - Lightweight LLM for text generation
+- **sentence-transformers** - Embedding models
+- **all-MiniLM-L6-v2** - Sentence embedding model
+
 ### Specialized Libraries
-- **NetworkX** - Graph analysis
 - **mlxtend** - Association rule mining (Apriori)
 - **BeautifulSoup/Selenium** - Web scraping
 - **statsmodels** - Statistical modeling
 - **cvxpy** - Convex optimization
+- **BERTopic** - Topic modeling with transformers
+- **CLIP** - Multimodal embeddings (OpenAI)
 
 ## 📫 Contact
 

@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "question": "How many staff members work in the Emergency Department?",
+    "expected_answer": "The number of staff working in Emergency Department (count from database)",
+    "category": "simple_count",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "question": "Which equipment is assigned to Cardiology?",
+    "expected_answer": "List of equipment assigned to Cardiology department",
+    "category": "simple_retrieval",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "question": "What certifications are required for operating the MRI machine?",
+    "expected_answer": "MRI Operation certification",
+    "category": "relationship_query",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "question": "Who are the nurses working in the ICU?",
+    "expected_answer": "Names of nurses working in ICU",
+    "category": "filtered_retrieval",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "question": "How many ventilators are there in total?",
+    "expected_answer": "Total count of ventilators across all departments",
+    "category": "simple_count",
+    "difficulty": "easy"
+  },
+  {
+    "id": 6,
+    "question": "Which departments share resources with Emergency Department?",
+    "expected_answer": "Departments connected via SHARES_RESOURCES_WITH relationship to Emergency",
+    "category": "relationship_query",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "question": "What equipment needs maintenance this month?",
+    "expected_answer": "Equipment with scheduled maintenance dates in current month",
+    "category": "filtered_retrieval",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "question": "Which staff are certified to operate the CT scanner?",
+    "expected_answer": "Staff members with CT Scanner Operation certification",
+    "category": "relationship_query",
+    "difficulty": "easy"
+  },
+  {
+    "id": 9,
+    "question": "How many ICU beds are currently available?",
+    "expected_answer": "Count of ICU beds with isAvailable = true",
+    "category": "filtered_count",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "question": "What is the capacity of the Surgery department?",
+    "expected_answer": "The capacity value from Surgery department node",
+    "category": "simple_retrieval",
+    "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "question": "Which operating rooms have access to robotic surgery equipment?",
+    "expected_answer": "Facilities (operating rooms) with HAS_ACCESS_TO relationships to surgical robots",
+    "category": "relationship_query",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "question": "List all staff in the Radiology department",
+    "expected_answer": "Names and roles of staff working in Radiology",
+    "category": "simple_retrieval",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "question": "How many departments are there in total?",
+    "expected_answer": "Total count of Department nodes (8 departments)",
+    "category": "simple_count",
+    "difficulty": "easy"
+  },
+  {
+    "id": 14,
+    "question": "Which equipment is operational in the Emergency Department?",
+    "expected_answer": "Equipment assigned to Emergency with status = 'Operational'",
+    "category": "filtered_retrieval",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "question": "What certifications does Dr. Sarah Chen have?",
+    "expected_answer": "Certifications linked to staff member with name containing 'Sarah Chen'",
+    "category": "relationship_query",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "question": "How many staff have certifications expiring soon?",
+    "expected_answer": "Count of staff with certification expiry dates in next 6 months",
+    "category": "temporal_query",
+    "difficulty": "hard"
+  },
+  {
+    "id": 17,
+    "question": "Which departments are understaffed?",
+    "expected_answer": "Departments where staff count < capacity * 0.7",
+    "category": "analytical_query",
+    "difficulty": "hard"
+  },
+  {
+    "id": 18,
+    "question": "What is the total budget for all departments?",
+    "expected_answer": "Sum of budget values across all departments",
+    "category": "aggregation",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "question": "Which shifts are scheduled for tomorrow?",
+    "expected_answer": "Shifts with date = tomorrow's date",
+    "category": "temporal_query",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "question": "How many technicians are certified for operating MRI machines?",
+    "expected_answer": "Count of staff with role='Technician' AND certified for MRI",
+    "category": "complex_filter",
+    "difficulty": "hard"
+  },
+  {
+    "id": 21,
+    "question": "Which equipment has the highest downtime-to-usage ratio?",
+    "expected_answer": "Equipment analysis based on maintenance records",
+    "category": "analytical_query",
+    "difficulty": "hard"
+  },
+  {
+    "id": 22,
+    "question": "What types of equipment are in the hospital?",
+    "expected_answer": "Distinct equipment types from all Equipment nodes",
+    "category": "simple_retrieval",
+    "difficulty": "easy"
+  },
+  {
+    "id": 23,
+    "question": "Which facilities belong to the ICU?",
+    "expected_answer": "Facilities with BELONGS_TO relationship to ICU department",
+    "category": "relationship_query",
+    "difficulty": "easy"
+  },
+  {
+    "id": 24,
+    "question": "How many staff work night shifts?",
+    "expected_answer": "Count of staff assigned to shifts with shiftType = 'Night'",
+    "category": "filtered_count",
+    "difficulty": "medium"
+  },
+  {
+    "id": 25,
+    "question": "What is the average occupancy rate of ICU beds?",
+    "expected_answer": "Calculated occupancy percentage for ICU beds",
+    "category": "aggregation",
+    "difficulty": "hard"
+  }
+]

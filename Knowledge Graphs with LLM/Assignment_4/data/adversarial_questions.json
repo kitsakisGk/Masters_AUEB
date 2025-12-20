@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "How many doctors work in the Oncology Department?",
+    "expected_behavior": "Should recognize Oncology department doesn't exist in the KG",
+    "category": "non_existent_entity",
+    "difficulty": "medium",
+    "expected_response_type": "Polite indication that Oncology department is not in the database"
+  },
+  {
+    "id": 2,
+    "question": "What equipment is in the Cardiolgy department?",
+    "expected_behavior": "Should handle typo 'Cardiolgy' -> 'Cardiology'",
+    "category": "typo",
+    "difficulty": "easy",
+    "expected_response_type": "List of equipment in Cardiology despite typo"
+  },
+  {
+    "id": 3,
+    "question": "Who works there?",
+    "expected_behavior": "Ambiguous reference - 'there' is undefined without context",
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "expected_response_type": "Request for clarification about which department"
+  },
+  {
+    "id": 4,
+    "question": "How many MIR machines are operational?",
+    "expected_behavior": "Should handle typo 'MIR' -> 'MRI'",
+    "category": "typo",
+    "difficulty": "easy",
+    "expected_response_type": "Count of operational MRI machines"
+  },
+  {
+    "id": 5,
+    "question": "Which department has the most experienced staff?",
+    "expected_behavior": "Complex analytical query requiring experience data not in schema",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "expected_response_type": "Indication that experience data is not available"
+  },
+  {
+    "id": 6,
+    "question": "Show me all the things in Emergency.",
+    "expected_behavior": "Vague query - 'things' could mean staff, equipment, facilities",
+    "category": "ambiguous",
+    "difficulty": "medium",
+    "expected_response_type": "Clarification request or comprehensive answer including multiple entity types"
+  },
+  {
+    "id": 7,
+    "question": "How many patients are currently in ICU beds?",
+    "expected_behavior": "Schema has bed availability but not current patient data",
+    "category": "unanswerable",
+    "difficulty": "medium",
+    "expected_response_type": "Indication that patient data is not tracked in the KG"
+  },
+  {
+    "id": 8,
+    "question": "What certifications does Dr. Johnson have?",
+    "expected_behavior": "Dr. Johnson doesn't exist in the database",
+    "category": "non_existent_entity",
+    "difficulty": "easy",
+    "expected_response_type": "Indication that Dr. Johnson is not found in the database"
+  },
+  {
+    "id": 9,
+    "question": "Which departments share resources with Pediatrics?",
+    "expected_behavior": "Pediatrics department doesn't exist in the KG",
+    "category": "non_existent_entity",
+    "difficulty": "medium",
+    "expected_response_type": "Indication that Pediatrics is not in the database"
+  },
+  {
+    "id": 10,
+    "question": "Is the equipment working?",
+    "expected_behavior": "Ambiguous - which equipment? All equipment?",
+    "category": "ambiguous",
+    "difficulty": "medium",
+    "expected_response_type": "Clarification request or summary of operational status across all equipment"
+  },
+  {
+    "id": 11,
+    "question": "How many staff work in Emrgency?",
+    "expected_behavior": "Should handle typo 'Emrgency' -> 'Emergency'",
+    "category": "typo",
+    "difficulty": "easy",
+    "expected_response_type": "Count of Emergency Department staff despite typo"
+  },
+  {
+    "id": 12,
+    "question": "What is the average salary of nurses?",
+    "expected_behavior": "Salary information not in the schema",
+    "category": "unanswerable",
+    "difficulty": "medium",
+    "expected_response_type": "Indication that salary data is not available"
+  },
+  {
+    "id": 13,
+    "question": "Which staff member is the best surgeon?",
+    "expected_behavior": "Subjective query requiring performance metrics not in KG",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "expected_response_type": "Indication that performance/quality metrics are not tracked"
+  },
+  {
+    "id": 14,
+    "question": "How many ventilators are in the Neurology Department?",
+    "expected_behavior": "Neurology department doesn't exist",
+    "category": "non_existent_entity",
+    "difficulty": "easy",
+    "expected_response_type": "Indication that Neurology department is not in the database"
+  },
+  {
+    "id": 15,
+    "question": "What shifts are scheduled for next month?",
+    "expected_behavior": "Temporal query beyond available data scope",
+    "category": "temporal_limitation",
+    "difficulty": "hard",
+    "expected_response_type": "Only show available shift data or indicate limitation"
+  }
+]

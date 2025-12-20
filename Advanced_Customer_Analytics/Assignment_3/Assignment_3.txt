@@ -1,0 +1,37 @@
+Στοιχεία εργασίας
+Τίτλος
+Assignment: Retrieval-Augmented Generation (RAG)
+Περιγραφή
+ 
+Create a Colab Notebook that completes that creates an end-to-end RAG pipeline:
+
+Unzips this docs.zip to extract documents (climate-change related content).
+
+Preprocesses and chunks the docs (paragraph or sentence level).
+
+Embeds the chunks using an open source embeddding model l (e.g. all-MiniLM-L6-v2) and store them in a vector database  (e.g. FAISS)
+
+Implements a function called ask(q) that:
+
+receives a question as a parameter
+
+retreives the top-k most relevant chunks from the vector DB
+
+uses an open-source LLM (e.g. tinyLLama, see below for an example snippet) to generate and return a plain-english responses based.   
+
+The objective is to give the best possible (complete, accurate) answers possible. You can use this reference dataset with questions and their correct answers to validate your work.
+
+ 
+
+Example tinyLLama Snippet:
+
+ 
+
+!pip install llama-cpp-python
+!wget -O tinyllama-1.1b.Q4_K_M.gguf https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf
+
+from llama_cpp import Llama
+llm = Llama(model_path="tinyllama-1.1b.Q4_K_M.gguf", verbose=False, n_ctx=2048)
+output = llm("Q: What is the latest version of Python?\nA:")
+print(output["choices"][0]["text"])
+ 

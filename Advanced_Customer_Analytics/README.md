@@ -30,43 +30,13 @@ This course focuses on advanced analytics techniques for understanding customer 
 
 ```
 Advanced_Customer_Analytics/
-├── Week_1/              # Introduction to Customer Analytics
-├── Week_2/              # RFM Analysis & Segmentation
-├── Week_3/              # Predictive Modeling
-├── Week_4/              # Advanced Topics
-├── Week_5/              # Multimodal Topic Mining with BERTopic
 ├── Assignment_1/        # Interpretable Predictions - Clothing Recommendations
 ├── Assignment_2/        # Visual Data Predictions - Yu-Gi-Oh! Card Topic Mining
+├── Assignment_3/        # RAG Pipeline - Climate Change Q&A System
 └── README.md
 ```
 
-## 🎯 Key Topics
-
-### Week 1: Foundations
-- Customer data exploration
-- Descriptive statistics
-- Data preprocessing for customer analytics
-
-### Week 2: RFM Analysis
-- Recency, Frequency, Monetary metrics
-- Customer segmentation strategies
-- Clustering algorithms
-
-### Week 3: Predictive Models
-- Churn prediction models
-- Customer lifetime value (CLV)
-- Logistic regression for classification
-
-### Week 4: Advanced Techniques
-- Marketing mix modeling
-- Attribution analysis
-- Recommendation systems
-
-### Week 5: Multimodal Topic Mining
-- BERTopic for visual and text data
-- CLIP embeddings for multimodal analysis
-- Image-caption topic discovery
-- FAGE brand case study
+## 🎯 Assignments
 
 ### Assignment 1: Interpretable Predictions
 - Women's Clothing E-Commerce dataset (23,486 reviews)
@@ -80,6 +50,13 @@ Advanced_Customer_Analytics/
 - Card archetype and theme classification
 - Image-text semantic alignment for trading cards
 
+### Assignment 3: RAG Pipeline
+- End-to-end Retrieval-Augmented Generation system
+- Climate change Q&A with TinyLlama and FAISS vector database
+- Document preprocessing and chunking strategies
+- Embedding-based retrieval with all-MiniLM-L6-v2
+- Comprehensive evaluation with 10 test questions
+
 ## 🛠️ Installation
 
 ```bash
@@ -90,8 +67,11 @@ pip install lifetimes statsmodels
 # For Assignment 1 (Interpretable AI)
 pip install dice-ml xgboost lime shap
 
-# For Assignment 2 & Week 5 (Multimodal Topic Mining)
+# For Assignment 2 (Multimodal Topic Mining)
 pip install bertopic[vision] kagglehub
+
+# For Assignment 3 (RAG Pipeline)
+pip install llama-cpp-python sentence-transformers faiss-cpu
 ```
 
 ## 📊 Technologies Used
@@ -100,26 +80,22 @@ pip install bertopic[vision] kagglehub
 - **pandas:** Data manipulation
 - **scikit-learn:** Machine learning algorithms
 - **Matplotlib/Seaborn:** Visualization
-- **lifetimes:** CLV modeling
+- **XGBoost:** Gradient boosting
+- **DiCE, LIME, SHAP, Anchors:** Interpretable AI
 - **BERTopic:** Topic modeling with transformers
 - **CLIP:** Multimodal embeddings (OpenAI)
-- **XGBoost:** Gradient boosting
-- **DiCE, LIME, SHAP:** Interpretable AI
+- **TinyLlama:** Lightweight LLM for text generation
+- **FAISS:** Vector database for similarity search
+- **sentence-transformers:** Embedding models
 - **kagglehub:** Dataset management
 - **Jupyter Notebook:** Interactive analysis
 
 ## 📚 Key Concepts
 
-- RFM (Recency, Frequency, Monetary) Analysis
-- K-means and Hierarchical Clustering
-- Customer Lifetime Value (CLV)
-- Churn Prediction
-- A/B Testing
-- Cohort Analysis
-- Multimodal Topic Mining
-- CLIP Embeddings for Image-Text Alignment
-- Interpretable AI (Counterfactuals, LIME, SHAP)
-- BERTopic for Visual Data
+- **Interpretable AI:** Counterfactuals (DiCE), Local explanations (LIME), Feature importance (SHAP), Rule-based explanations (Anchors)
+- **Multimodal Topic Mining:** BERTopic with CLIP embeddings for image-text analysis
+- **Retrieval-Augmented Generation (RAG):** LLM-powered Q&A with vector database retrieval
+- **Customer Analytics:** RFM Analysis, Segmentation, Predictive Modeling
 
 ---
 

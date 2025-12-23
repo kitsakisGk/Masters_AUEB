@@ -158,15 +158,66 @@ Implemented functions to detect:
 
 ---
 
-### Project 3: Advanced Network Analysis
+### Project 3: Distributed Community Detection with Apache Giraph
 
-**Topics:** (Based on assignment requirements)
-- Advanced graph algorithms
-- Network dynamics and evolution
-- Real-world network applications
+**Objective:** Implement distributed graph algorithms using Apache Giraph (Hadoop-based graph processing framework) for large-scale community detection.
+
+**Technologies:**
+- **Apache Giraph** - Distributed graph processing (BSP model)
+- **Apache Hadoop** - MapReduce framework
+- **HDFS** - Hadoop Distributed File System
+- **Java** - Implementation language
+
+**Algorithm Implemented:**
+
+**Label Propagation for Community Detection**
+- Iterative algorithm where vertices propagate community labels to neighbors
+- Each vertex adopts majority label from neighbors
+- Converges when no label changes occur
+- Time complexity: O(k × m) where k = iterations, m = edges
+- Highly scalable for massive graphs (billions of nodes)
+
+**Implementation Details:**
+
+1. **SimpleLabelPropagationComputation.java**
+   - Vertex-centric computation logic
+   - Message passing between neighbors
+   - Majority voting with tie-breaking rules
+   - Maximum 50 supersteps with early convergence detection
+
+2. **GiraphAppRunner.java**
+   - Local testing framework for Giraph jobs
+   - Test graphs with known community structure
+   - Validation of algorithm correctness
+
+**Key Concepts:**
+- **Bulk Synchronous Parallel (BSP)** - Computation in synchronized supersteps
+- **Vertex-centric programming** - "Think like a vertex" paradigm
+- **Message passing** - Vertices communicate only via messages
+- **Convergence detection** - Algorithm halts when communities stabilize
+
+**Results:**
+- Successfully detected communities in test graphs
+- Converged in 3-5 supersteps for small graphs
+- Scalable to graphs with millions of nodes on Hadoop clusters
+- Hadoop job logs demonstrate distributed execution
+
+**Comparison with Project 2:**
+
+| Aspect | Project 2 (SNAP) | Project 3 (Giraph) |
+|--------|------------------|-------------------|
+| Framework | SNAP (single machine) | Giraph (distributed) |
+| Algorithm | Girvan-Newman, CNM | Label Propagation |
+| Scalability | Up to millions of nodes | Billions of nodes (distributed) |
+| Time Complexity | O(m²n) / O(n log² n) | O(k × m) - much faster |
+| Platform | Python, local | Java, Hadoop cluster |
 
 **Deliverables:**
-- [project3.pdf](Project_3/project3.pdf) - Project report
+- [SimpleLabelPropagationComputation.java](Project_3/SimpleLabelPropagationComputation.java) - Main algorithm
+- [GiraphAppRunner.java](Project_3/GiraphAppRunner.java) - Test runner
+- [Project3_Kitsakis.pdf](Project_3/Project3_Kitsakis.pdf) - Comprehensive report
+- [README.md](Project_3/README.md) - Detailed documentation
+- Hadoop job execution logs
 
 ---
 

@@ -132,7 +132,9 @@ Graph theory, centrality measures, and community detection algorithms
 - **Matplotlib** - Static plotting
 - **Seaborn** - Statistical visualizations
 - **Plotly** - Interactive plots
+- **Folium** - Interactive map visualizations
 - **ggplot2** - R graphics
+- **Tableau** - Interactive dashboards
 
 ### NLP & Text Analytics
 - **NLTK** - Natural language toolkit
@@ -144,9 +146,11 @@ Graph theory, centrality measures, and community detection algorithms
 - **Apache Kafka** - Message streaming
 - **Apache Cassandra** - NoSQL database
 - **Apache Hadoop MapReduce** - Batch processing
+- **Apache Giraph** - Distributed graph processing (BSP model)
 - **MySQL/PostgreSQL** - Relational databases
 - **Neo4j** - Graph database
 - **Cypher** - Graph query language
+- **HDFS** - Hadoop Distributed File System
 
 ### Explainable AI
 - **LIME** - Local interpretable explanations

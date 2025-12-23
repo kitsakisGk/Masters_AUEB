@@ -1,0 +1,34 @@
+Στοιχεία εργασίας
+Τίτλος
+[2025-2026 PT] Final Project
+Περιγραφή
+At https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/HG7NV7 you can find detailed data on all commercial flights within the USA for several years.
+
+ 
+
+Each team will work with two of the busiest airports of the US:
+
+Team A: ATL - DFW
+Team B: DEN - ORD
+Team C: LAX - JFK
+Team D: CLT - LAS
+Team E: MCO - MIA
+
+ 
+
+You must create a data story about the status and progress of these airports during years 2004 - 2008. You must present the two airports comparatively, showcasing positive and negative points and suggesting ways for improvement.
+
+In your analysis you may (if you find it useful) include data for other airports and more years; you may also resort to external data sources for related data that might contribute to your findings.
+
+ 
+
+You must create at least 12 visualizations to present your findings, including (at least) one map visualization and  (at least) one interactive visualization. As a team, you must use both a code-based tool (R, Python) and an interactive tool (such as Tableau) to create your graphs.
+
+ 
+
+You must submit a report (in Word or other, submit it in PDF format) explaining the graphs and communicating your story in detail. In the report include an appendix outlining the contribution of each member of the team. Also include a Dropbox or similar link from which we can download the files that you have used to create the graphs: processed data files, code, Tableau files, etc.
+
+You must also submit the presentation (in Powerpoint or other, submit it preferably in PDF format) that you will use to present your work. You will have 20 minutes for your presentation. All members of each team must speak during the presentation. You must use the version of the presentation that you have submitted to e-class, not any newer / corrected one.
+
+ 
+

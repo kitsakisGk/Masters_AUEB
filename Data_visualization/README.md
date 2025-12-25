@@ -37,8 +37,13 @@ Data_Visualization/
 │   ├── PISA_2018_Static_Visualizations.pptx
 │   ├── PISA_2018_Interactive_Plots.pptx
 │   ├── pisa2018.Rdata
-│   ├── Assignment_1.jpg
 │   └── plots/
+├── Final_Project/       # US Airport Analysis - MCO vs MIA (2004-2008)
+│   ├── 01_data_loading.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── COLUMN_REFERENCE.md
+│   ├── requirements.txt
+│   └── processed/
 └── README.md
 ```
 
@@ -82,6 +87,68 @@ The analysis reveals patterns in:
 - Gender disparities in STEM vs. humanities subjects
 - Impact of socioeconomic factors on educational outcomes
 - Trends in educational achievement across regions
+
+---
+
+## 🎯 Final Project: US Airport Analysis - MCO vs MIA
+
+### Project Overview
+
+Comparative analysis of **Orlando International Airport (MCO)** vs **Miami International Airport (MIA)** using commercial flight data from 2004-2008 (1.6M flights). Team E assignment for creating a data story showcasing airport performance, trends, and recommendations.
+
+### 📊 Dataset
+
+- **Source:** Harvard Dataverse - US Commercial Flights (2004-2008)
+- **Scope:** 1,592,198 flights involving MCO or MIA
+- **Time Period:** January 2004 - April 2008
+- **Features:** 40+ columns including delays, cancellations, carriers, routes
+
+### 📁 Project Components
+
+| File | Description |
+|------|-------------|
+| `01_data_loading.ipynb` | Load and explore raw flight data |
+| `02_data_cleaning.ipynb` | Data cleaning and feature engineering |
+| `COLUMN_REFERENCE.md` | Complete data dictionary (155 lines) |
+| `requirements.txt` | Python dependencies (pandas, plotly, folium) |
+| `processed/` | Cleaned datasets by year (CSV.GZ format) |
+
+### 🔍 Analysis Focus
+
+**Comparative Metrics:**
+- On-time performance (MCO: 78.88%, MIA: 74.03%)
+- Delay patterns by time of day, season, carrier
+- Cancellation rates and causes
+- Route analysis and distance categories
+- Geographic visualization of flight networks
+
+**Derived Features:**
+- Time categorization (Morning, Afternoon, Evening, Night)
+- Delay categories (OnTime, Delayed, SeverelyDelayed)
+- Primary delay causes (Carrier, Weather, NAS, Security, Aircraft)
+- Seasonal patterns (Holiday vs regular months)
+- Distance categories (Short, Medium, Long, VeryLong)
+
+### 🛠️ Technologies
+
+- **pandas 2.1.4** - Data manipulation
+- **matplotlib 3.8.2** - Static visualizations
+- **seaborn 0.13.0** - Statistical plots
+- **plotly 5.18.0** - Interactive visualizations
+- **folium 0.15.1** - Map visualizations
+- **Tableau** - Interactive dashboards
+
+### 📈 Deliverables
+
+- ✅ Data loading and cleaning pipeline
+- ✅ 1.6M flights processed and cleaned
+- ✅ Comprehensive data dictionary
+- 🔜 12+ visualizations (static + interactive)
+- 🔜 Map visualization (Folium)
+- 🔜 Final report (PDF)
+- 🔜 Presentation slides
+
+---
 
 ## 🎓 Learning Outcomes
 

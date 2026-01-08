@@ -43,14 +43,15 @@ Final_Project/
 ├── COLUMN_REFERENCE.md            # Complete data dictionary (155 lines)
 ├── requirements.txt               # Python dependencies
 ├── Final_Project.txt              # Assignment description
-├── processed/                     # Cleaned datasets
-│   ├── mco_mia_2004.csv.gz       # 2004 flights
-│   ├── mco_mia_2005.csv.gz       # 2005 flights
-│   ├── mco_mia_2006.csv.gz       # 2006 flights
-│   ├── mco_mia_2007.csv.gz       # 2007 flights
-│   ├── mco_mia_2008.csv.gz       # 2008 flights (partial - Jan-Apr)
-│   ├── mco_mia_2004_2008.csv.gz  # All years combined
-│   └── mco_mia_clean.csv.gz      # Final cleaned dataset (1.6M flights)
+├── data/                          # Data folder (not in git - too large)
+│   ├── raw/                       # Raw CSV files from Harvard Dataverse
+│   └── processed/                 # Cleaned datasets
+│       ├── mco_mia_2004.csv.gz
+│       ├── mco_mia_2005.csv.gz
+│       ├── mco_mia_2006.csv.gz
+│       ├── mco_mia_2007.csv.gz
+│       ├── mco_mia_2008.csv.gz
+│       └── mco_mia_clean.csv.gz   # Final cleaned dataset (1.6M flights)
 └── README.md                      # This file
 ```
 
@@ -107,7 +108,7 @@ jupyter notebook 02_data_cleaning.ipynb
 - Initial data exploration
 - Save filtered data by year
 
-**Output:** Raw filtered datasets in `processed/` folder
+**Output:** Raw filtered datasets in `data/processed/` folder
 
 ### Stage 2: Data Cleaning (`02_data_cleaning.ipynb`)
 
@@ -125,7 +126,7 @@ jupyter notebook 02_data_cleaning.ipynb
 - ✅ **Flight Categories:** TimeOfDay (Morning/Afternoon/Evening/Night), IsWeekend, DistanceCategory
 - ✅ **Delay Analysis:** PrimaryDelayCause (Carrier/Weather/NAS/Security/LateAircraft)
 
-**Output:** Clean dataset `mco_mia_clean.csv.gz` (1.6M flights, 54MB compressed)
+**Output:** Clean dataset `data/processed/mco_mia_clean.csv.gz` (1.6M flights, 54MB compressed)
 
 ### Stage 3: Exploratory Data Analysis (In Progress)
 

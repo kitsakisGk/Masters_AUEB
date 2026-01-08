@@ -43,7 +43,8 @@ Data_Visualization/
 │   ├── 02_data_cleaning.ipynb
 │   ├── COLUMN_REFERENCE.md
 │   ├── requirements.txt
-│   └── processed/
+│   ├── README.md
+│   └── data/             # Data folder (not in git - too large)
 └── README.md
 ```
 
@@ -111,7 +112,8 @@ Comparative analysis of **Orlando International Airport (MCO)** vs **Miami Inter
 | `02_data_cleaning.ipynb` | Data cleaning and feature engineering |
 | `COLUMN_REFERENCE.md` | Complete data dictionary (155 lines) |
 | `requirements.txt` | Python dependencies (pandas, plotly, folium) |
-| `processed/` | Cleaned datasets by year (CSV.GZ format) |
+| `README.md` | Complete project documentation |
+| `data/` | Data folder (not in git - too large) |
 
 ### 🔍 Analysis Focus
 

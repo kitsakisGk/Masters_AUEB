@@ -102,6 +102,13 @@ Graph theory, centrality measures, and community detection algorithms
 ![Gephi](https://img.shields.io/badge/Gephi-0.10-orange.svg)
 ![SNAP](https://img.shields.io/badge/SNAP-stanford-red.svg)
 
+### [Legal and Ethical Issues in Data Science](Legal_Ethical/)
+Data protection, AI ethics, GDPR compliance, and fundamental rights
+
+![GDPR](https://img.shields.io/badge/GDPR-Compliance-blue.svg)
+![AI Ethics](https://img.shields.io/badge/AI-Ethics-green.svg)
+![EU AI Act](https://img.shields.io/badge/EU_AI_Act-purple.svg)
+
 ---
 
 ## 🛠️ Technologies & Tools

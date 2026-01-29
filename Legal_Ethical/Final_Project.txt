@@ -1,0 +1,38 @@
+
+LEGAL AND ETHICAL ISSUES IN DATA SCIENCE
+
+Prof. Lilian Mitrou
+
+Assignment
+
+Students : 1-2 students
+
+Length: 2.000-5.000 (including references)
+
+Language: English/ Greek
+
+Please declare the assignment topic by e-mail to the instructor stating in the subject line of the message “Legal and Ethical Issues in Data Science – Assignment” and in the body of the e-mail the full name of the student or students, whether you are Full-time or Part-time, and the assignment topic you have selected.
+
+ 
+
+Topics
+
+Data protection by design and implications for data management.
+Profiling and Data Protection
+IoT and data protection issues
+Artificial Intelligence and personal data/GDPR
+Use/Analysis of personal data for scoring/predictions
+AI supported Face Recognition Systems (Uses-Legal issues)
+Artificial Intelligence – Predictive Policing
+Emotion Recognition in the workplace
+Emotion recognition in the education sector
+Human oversight of Artificial Intelligence Systems
+Artificial Intelligence and Automated Decision Making
+Artificial Intelligence in Health sector
+Artificial Intelligence in Public Sector/Administration
+Legal issues of Generative AI
+Impact of AI on fundamental rights and democracy
+Data Governance – Data Governance Act
+Free speech and Fake news / Disinformation Detection
+Free speech and hate speech /Hate speech detection
+Large Language Models and misinformation

@@ -109,6 +109,13 @@ Data protection, AI ethics, GDPR compliance, and fundamental rights
 ![AI Ethics](https://img.shields.io/badge/AI-Ethics-green.svg)
 ![EU AI Act](https://img.shields.io/badge/EU_AI_Act-purple.svg)
 
+### [Recommender Systems](Recommender_Systems/)
+Collaborative filtering, content-based recommendations, and topic modeling
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![LDA](https://img.shields.io/badge/LDA-Topic_Modeling-green.svg)
+![MovieLens](https://img.shields.io/badge/MovieLens-Dataset-red.svg)
+
 ---
 
 ## 🛠️ Technologies & Tools

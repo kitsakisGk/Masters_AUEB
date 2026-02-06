@@ -35,6 +35,11 @@ Recommender_Systems/
 ├── Week_2/                  # Topic Modeling for Recommendations
 │   ├── LDA_movies.ipynb
 │   └── Topic Modeling.ipynb
+├── Week_3/                  # Content-Based Filtering & Simulation
+│   ├── IMDB.ipynb
+│   ├── IMDB_v2.ipynb
+│   ├── Recsys_Simulation.ipynb
+│   └── imdb_top_1000.csv
 └── README.md
 ```
 
@@ -116,11 +121,59 @@ Recommender_Systems/
 
 ---
 
+## 🎯 Week 3: Content-Based Filtering & Simulation
+
+### Content-Based Filtering (IMDB.ipynb)
+
+**Concept:** Recommend movies based on item feature similarity (no user ratings needed).
+
+**Similarity Factors:**
+- **Genre** - Jaccard similarity of genre sets
+- **Director** - Shared directors between movies
+- **Stars** - Shared cast members
+- **Release Year** - Normalized year difference
+- **Rating** - IMDB rating as quality signal
+
+**Dataset:** IMDB Top 1000 movies with metadata (genres, directors, stars, ratings, overviews)
+
+### Enhanced Content-Based with SBERT (IMDB_v2.ipynb)
+
+**Concept:** Add semantic understanding by embedding movie overviews with Sentence-BERT.
+
+**Enhancements over basic version:**
+- **SBERT (all-MiniLM-L6-v2)** - Encode movie overviews into dense vectors
+- **Cosine Similarity** - Semantic text matching for plot descriptions
+- **Explainable Scores** - Breakdown showing contribution of each factor
+- **6 weighted factors:** genre, director, stars, release year, overview, rating
+
+**Example Output:**
+```
+Toy Story → Toy Story 2 (score: 4.45)
+  Factors: director=1.0, genre=1.0, ryear=0.96, rating=0.79, overview=0.37, star=0.33
+```
+
+### RecSys Simulation Framework (Recsys_Simulation.ipynb)
+
+**Concept:** Simulate a full recommendation system with synthetic users to evaluate algorithms.
+
+**Simulation Pipeline:**
+1. **User Generation** - Create 100 synthetic users with random preference weights
+2. **Seed Movies** - Each user gets 5 random seed movies they like
+3. **Like Threshold** - Computed as mean similarity + 1.5 × std deviation
+4. **Random Recommender** - Baseline: recommend random movies and check if user likes them
+5. **Evaluation** - Average likes per 50 recommendations (~10/50 for random baseline)
+
+**Key Insight:** Random recommendation achieves ~20% hit rate, providing a baseline to beat with smarter algorithms.
+
+---
+
 ## 🛠️ Technologies Used
 
 - **Python 3.8+** - Primary programming language
 - **pandas** - Data manipulation and analysis
 - **tomotopy** - Fast topic modeling (LDA)
+- **sentence-transformers** - SBERT for semantic embeddings
+- **PyTorch** - Deep learning backend for SBERT
 - **scikit-learn** - Machine learning utilities
 - **Jupyter Notebook** - Interactive analysis
 
@@ -151,21 +204,39 @@ Recommender_Systems/
 
 ---
 
+### Content-Based Filtering
+- **Feature-Based Similarity:** Compare item attributes directly
+- **Weighted Scoring:** Assign importance to each feature
+- **SBERT Embeddings:** Semantic text similarity for descriptions
+- **Explainability:** Score breakdown per factor
+
+### Evaluation
+- **Simulated Users:** Generate synthetic preferences for testing
+- **Hit Rate:** Fraction of recommendations users liked
+- **Baseline Comparison:** Random recommender as lower bound
+
+---
+
 ## 🚀 Running the Notebooks
 
 ```bash
 # Install dependencies
 pip install pandas numpy scikit-learn tomotopy jupyter
+pip install sentence-transformers torch
 
 # Launch Jupyter
 cd Recommender_Systems
 jupyter notebook
 
-# Week 1: Run collaborative filtering
+# Week 1: Collaborative filtering
 # Open: Week_1/Based and User-Based Recommendations.ipynb
 
-# Week 2: Run topic modeling
+# Week 2: Topic modeling
 # Open: Week_2/LDA_movies.ipynb
+
+# Week 3: Content-based filtering & simulation
+# Open: Week_3/IMDB.ipynb
+# Open: Week_3/Recsys_Simulation.ipynb
 ```
 
 ---
@@ -206,13 +277,26 @@ Topic 0: "Disliked Action movies (2000s, 2000-2007)"
 
 ---
 
+### Content-Based Recommendation
+```
+Toy Story → Recommendations:
+ Toy Story 2 (score: 4.45)
+ Toy Story 3 (score: 3.35)
+ Toy Story 4 (score: 3.27)
+ Monsters, Inc. (score: 2.99)
+```
+
+---
+
 ## 🔑 Key Takeaways
 
 1. **User-Based CF** works well when users have many ratings in common
 2. **Item-Based CF** is more stable as item similarities change less over time
 3. **LDA** reveals hidden structure in rating patterns beyond explicit genres
-4. **Hybrid approaches** combining multiple methods often perform best
-5. **Cold start** remains a challenge - need fallback strategies for new users/items
+4. **Content-Based** doesn't need user ratings - uses item features directly
+5. **SBERT embeddings** capture semantic plot similarity beyond keyword matching
+6. **Simulation frameworks** enable systematic evaluation of recommendation algorithms
+7. **Hybrid approaches** combining multiple methods often perform best
 
 ---
 

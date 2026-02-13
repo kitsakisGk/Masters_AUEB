@@ -116,6 +116,13 @@ Collaborative filtering, content-based recommendations, and topic modeling
 ![LDA](https://img.shields.io/badge/LDA-Topic_Modeling-green.svg)
 ![MovieLens](https://img.shields.io/badge/MovieLens-Dataset-red.svg)
 
+### [Deep Learning](Deep_Learning/)
+Neural networks from MLPs to CNNs, transfer learning with VGG19, and optimizer comparison studies
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.19-orange.svg)
+![Keras](https://img.shields.io/badge/Keras-Functional_API-red.svg)
+
 ---
 
 ## 🛠️ Technologies & Tools
@@ -134,6 +141,7 @@ Collaborative filtering, content-based recommendations, and topic modeling
 - **XGBoost** - Gradient boosting
 - **Transformers (Hugging Face)** - Pre-trained models & NLP
 - **PEFT/LoRA** - Parameter-efficient fine-tuning
+- **VGG19** - Transfer learning (ImageNet pre-trained)
 
 ### Data Processing
 - **pandas** - Data manipulation

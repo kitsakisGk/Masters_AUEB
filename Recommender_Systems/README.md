@@ -2,7 +2,7 @@
 
 <div align="center">
 
-## Collaborative Filtering, Content-Based & Topic Modeling for Recommendations
+## Collaborative Filtering, Content-Based, Topic Modeling & User Segmentation
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![pandas](https://img.shields.io/badge/pandas-grey.svg)
@@ -23,6 +23,7 @@ This course covers the fundamental techniques and algorithms for building recomm
 - **Collaborative Filtering:** User-based and item-based recommendations
 - **Content-Based Filtering:** Recommendations based on item features
 - **Topic Modeling:** LDA for discovering latent topics in user preferences
+- **User Segmentation:** Behavioral segments and synthetic dataset generation
 - **Similarity Metrics:** Jaccard coefficient, cosine similarity
 - **Evaluation:** Precision, recall, recommendation quality assessment
 
@@ -35,11 +36,15 @@ Recommender_Systems/
 ├── Week_2/                  # Topic Modeling for Recommendations
 │   ├── LDA_movies.ipynb
 │   └── Topic Modeling.ipynb
-├── Week_3/                  # Content-Based Filtering & Simulation
+├── Week_3_4/                # Content-Based Filtering & Simulation
 │   ├── IMDB.ipynb
 │   ├── IMDB_v2.ipynb
 │   ├── Recsys_Simulation.ipynb
 │   └── imdb_top_1000.csv
+├── Week_5/                  # User Segmentation & Restaurant Recommendations
+│   ├── Restaurant_Rating_Generator.ipynb
+│   ├── segment1.csv
+│   └── segment2.csv
 └── README.md
 ```
 
@@ -121,7 +126,7 @@ Recommender_Systems/
 
 ---
 
-## 🎯 Week 3: Content-Based Filtering & Simulation
+## 🎯 Week 3-4: Content-Based Filtering & Simulation
 
 ### Content-Based Filtering (IMDB.ipynb)
 
@@ -171,6 +176,27 @@ Toy Story → Toy Story 2 (score: 4.45)
 | Smart (Content-Based) | ~48/50 | ~96% |
 
 **Key Insight:** The smart recommender leverages multi-factor similarity (genre, director, stars, year, overview, rating) to dramatically outperform random selection, validating the content-based approach.
+
+---
+
+## 🎯 Week 5: User Segmentation & Restaurant Recommendations
+
+### Restaurant Rating Generator (Restaurant_Rating_Generator.ipynb)
+
+**Concept:** Simulate a restaurant recommendation dataset with distinct user segments to study how user preferences affect recommendation quality.
+
+**Simulation Pipeline:**
+1. **Restaurant Generation** - Create 100 synthetic restaurants with attributes: cuisine types, price range, delivery options, average rating & delivery time, payment methods
+2. **User Segmentation** - Two behaviorally distinct user segments:
+   - **Segment 1 - One-Trick Pony:** Older users (~60yo), single cuisine preference, rate based on high rating (>4) and fast delivery (≤35 min)
+   - **Segment 2 - Young & Price-Driven:** Younger users (~25yo), multiple cuisine preferences, rate based on price tier with higher quality thresholds for expensive restaurants
+3. **Rating Generation** - Generate CSV rating files for each segment based on segment-specific criteria
+4. **Random Recommender** - Baseline recommender evaluated against each segment's preferences
+
+**Key Takeaways:**
+- User segmentation reveals that one-size-fits-all recommendations fail different user types
+- Segment 1 cares about quality and speed; Segment 2 is budget-conscious with broader tastes
+- Synthetic data generation enables controlled evaluation of recommendation strategies
 
 ---
 
@@ -241,9 +267,12 @@ jupyter notebook
 # Week 2: Topic modeling
 # Open: Week_2/LDA_movies.ipynb
 
-# Week 3: Content-based filtering & simulation
-# Open: Week_3/IMDB.ipynb
-# Open: Week_3/Recsys_Simulation.ipynb
+# Week 3-4: Content-based filtering & simulation
+# Open: Week_3_4/IMDB.ipynb
+# Open: Week_3_4/Recsys_Simulation.ipynb
+
+# Week 5: User segmentation & restaurant recommendations
+# Open: Week_5/Restaurant_Rating_Generator.ipynb
 ```
 
 ---
@@ -303,7 +332,8 @@ Toy Story → Recommendations:
 4. **Content-Based** doesn't need user ratings - uses item features directly
 5. **SBERT embeddings** capture semantic plot similarity beyond keyword matching
 6. **Simulation frameworks** enable systematic evaluation of recommendation algorithms
-7. **Hybrid approaches** combining multiple methods often perform best
+7. **User Segmentation** shows that different user types require tailored recommendation strategies
+8. **Hybrid approaches** combining multiple methods often perform best
 
 ---
 

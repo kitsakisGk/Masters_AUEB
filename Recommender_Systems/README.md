@@ -46,8 +46,6 @@ Recommender_Systems/
 │   ├── Restaurant_Rating_Generator.ipynb
 │   └── Restaurant_Rating_Generator_professor.ipynb
 ├── Assignment_1/                  # HW1: Synthetic Video Game RecSys + LDA Segment Discovery
-│   ├── Assignment_1_Kitsakis_Phase1.ipynb
-│   ├── Assignment_1_Kitsakis_Phase2.ipynb
 │   └── Assignment_1_Kitsakis.ipynb
 └── README.md
 ```
@@ -193,13 +191,13 @@ generate_ratings()   →  binary like/dislike ratings with configurable noise %
 learn_segments()     →  LDA with anchor words to recover the 5 segments
 ```
 
-### Two-Phase Approach
+### Two-Phase Approach (`Assignment_1_Kitsakis.ipynb`)
 
-**Phase 1 (`Assignment_1_Kitsakis_Phase1.ipynb`):** Simple, broad criteria per segment (e.g. just platform). Tests whether LDA can find segments from weak signals.
+The notebook runs both phases back to back for direct comparison of LDA segment recovery quality:
 
-**Phase 2 (`Assignment_1_Kitsakis_Phase2.ipynb`):** Full multi-attribute criteria (platform + Metacritic + playtime + genre + age rating). Gives LDA richer, more distinctive signals per segment.
+**Phase 1 — Simple criteria:** Broad, obvious filters per segment (e.g. just platform). Tests whether LDA can find segments from weak signals alone.
 
-**Combined (`Assignment_1_Kitsakis.ipynb`):** Runs both phases back to back for direct comparison of LDA segment recovery quality.
+**Phase 2 — Full criteria:** Multi-attribute conditions (platform + Metacritic + playtime + genre + age rating). Gives LDA richer, more distinctive signals per segment.
 
 **Key Insight:** Phase 2's richer criteria produce more distinctive rating patterns, allowing LDA (with anchor words) to recover the 5 segments far more cleanly than Phase 1's broad signals.
 
@@ -249,8 +247,8 @@ pip install pandas numpy scikit-learn tomotopy sentence-transformers torch jupyt
 # Week 5 — Restaurant segmentation
 # Week_5/Restaurant_Rating_Generator.ipynb
 
-# Assignment 1 — Video game RecSys + LDA (run on Google Colab)
-# Assignment_1/Assignment_1_Kitsakis.ipynb
+# Assignment 1 — Video game RecSys + LDA segment discovery (Google Colab)
+# Assignment_1/Assignment_1_Kitsakis.ipynb  ← both phases included
 ```
 
 ---
@@ -264,7 +262,7 @@ pip install pandas numpy scikit-learn tomotopy sentence-transformers torch jupyt
 5. **Content-Based** filtering needs no user history — uses item features directly (cold-start friendly)
 6. **SBERT embeddings** capture semantic plot similarity that keyword matching misses entirely
 7. **User segmentation** shows that one-size-fits-all recommendations degrade performance for minority segments
-8. **Phase comparison** (simple vs. rich criteria) demonstrates that richer signals produce cleaner segment recovery
+8. **Richer rating criteria** produce more distinctive LDA topics and cleaner segment recovery than broad simple rules
 9. **Hybrid approaches** combining multiple signals consistently outperform any single method
 
 ---

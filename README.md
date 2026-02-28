@@ -110,14 +110,15 @@ Data protection, AI ethics, GDPR compliance, and fundamental rights
 ![EU AI Act](https://img.shields.io/badge/EU_AI_Act-purple.svg)
 
 ### [Recommender Systems](Recommender_Systems/)
-Collaborative filtering, content-based recommendations, and topic modeling
+Collaborative filtering, content-based recommendations, topic modeling, and user segmentation with LDA segment discovery
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![LDA](https://img.shields.io/badge/LDA-Topic_Modeling-green.svg)
 ![MovieLens](https://img.shields.io/badge/MovieLens-Dataset-red.svg)
+![SBERT](https://img.shields.io/badge/SBERT-Embeddings-orange.svg)
 
 ### [Deep Learning](Deep_Learning/)
-Neural networks from MLPs to CNNs, transfer learning with VGG19, and optimizer comparison studies
+Neural networks from MLPs to CNNs, transfer learning with VGG19, optimizer comparison studies, and final assignment on CIFAR-10 & Fashion-MNIST classification
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.19-orange.svg)

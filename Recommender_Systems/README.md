@@ -46,7 +46,7 @@ Recommender_Systems/
 │   ├── Restaurant_Rating_Generator.ipynb
 │   └── Restaurant_Rating_Generator_professor.ipynb
 ├── Assignment_1/                  # HW1: Synthetic Video Game RecSys + LDA Segment Discovery
-│   └── Assignment_1_Kitsakis.ipynb
+│   └── Assignment_1_Kitsakis_Colab.ipynb
 └── README.md
 ```
 
@@ -191,7 +191,7 @@ generate_ratings()   →  binary like/dislike ratings with configurable noise %
 learn_segments()     →  LDA with anchor words to recover the 5 segments
 ```
 
-### Two-Phase Approach (`Assignment_1_Kitsakis.ipynb`)
+### Two-Phase Approach (`Assignment_1_Kitsakis_Colab.ipynb`)
 
 The notebook runs both phases back to back for direct comparison of LDA segment recovery quality:
 
@@ -248,7 +248,7 @@ pip install pandas numpy scikit-learn tomotopy sentence-transformers torch jupyt
 # Week_5/Restaurant_Rating_Generator.ipynb
 
 # Assignment 1 — Video game RecSys + LDA segment discovery (Google Colab)
-# Assignment_1/Assignment_1_Kitsakis.ipynb  ← both phases included
+# Assignment_1/Assignment_1_Kitsakis_Colab.ipynb  ← both phases included
 ```
 
 ---

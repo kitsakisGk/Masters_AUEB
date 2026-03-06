@@ -45,7 +45,10 @@ Recommender_Systems/
 ├── Week_5/                        # User Segmentation & Restaurant Recommendations
 │   ├── Restaurant_Rating_Generator.ipynb
 │   └── Restaurant_Rating_Generator_professor.ipynb
+├── Week_6/                        # Two Towers Retrieval Model
+│   └── 2Towers.ipynb
 ├── Assignment_1/                  # HW1: Synthetic Video Game RecSys + LDA Segment Discovery
+│   ├── Assignment_1_Kitsakis.ipynb
 │   └── Assignment_1_Kitsakis_Colab.ipynb
 └── README.md
 ```
@@ -203,13 +206,38 @@ The notebook runs both phases back to back for direct comparison of LDA segment 
 
 ---
 
+## 🎯 Week 6: Two Towers Retrieval Model
+
+### Two-Tower Model (`2Towers.ipynb`)
+
+**Concept:** Learn a vector embedding for every user and every movie. If a user likes a movie, their vectors should point in the same direction (high dot product). If not, they should point away. At inference time, find the movies whose vectors are closest to the user's vector.
+
+**Dataset:** MovieLens 100K — downloaded automatically from the GroupLens website
+
+**Architecture:**
+- **User Tower** — embedding layer mapping each user ID to a dense vector
+- **Movie Tower** — embedding layer mapping each movie title to a dense vector
+- **Scoring** — dot product between user and movie vectors
+- **Training** — pairwise loss: push liked movies closer, push randomly sampled negatives further away
+
+**Pipeline:**
+1. Load ratings and map users/movies to integer indices
+2. Train/test split
+3. Train Two-Tower model with negative sampling
+4. Evaluate with Recall@K
+5. Generate top-N recommendations for any user
+
+**Why Two Towers?** Classical CF methods don't scale — computing all pairwise similarities is O(n²). Two Towers learns compact embeddings that can be searched efficiently with approximate nearest neighbour methods, making it the backbone of real-world recommenders at scale (YouTube, Spotify, Pinterest).
+
+---
+
 ## 🛠️ Technologies Used
 
 - **Python 3.8+** - Primary language
 - **pandas / NumPy** - Data manipulation
 - **tomotopy** - Fast LDA topic modeling with anchor word support
 - **sentence-transformers** - SBERT for semantic plot embeddings
-- **PyTorch** - Deep learning backend for SBERT
+- **PyTorch** - Two Towers model and deep learning backend for SBERT
 - **scikit-learn** - Utilities and metrics
 - **Jupyter Notebook** - Interactive development
 
@@ -263,7 +291,8 @@ pip install pandas numpy scikit-learn tomotopy sentence-transformers torch jupyt
 6. **SBERT embeddings** capture semantic plot similarity that keyword matching misses entirely
 7. **User segmentation** shows that one-size-fits-all recommendations degrade performance for minority segments
 8. **Richer rating criteria** produce more distinctive LDA topics and cleaner segment recovery than broad simple rules
-9. **Hybrid approaches** combining multiple signals consistently outperform any single method
+9. **Two Towers** scales to millions of items via learned embeddings and approximate nearest neighbour search
+10. **Hybrid approaches** combining multiple signals consistently outperform any single method
 
 ---
 

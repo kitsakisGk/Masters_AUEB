@@ -49,7 +49,8 @@ Recommender_Systems/
 │   └── 2Towers.ipynb
 ├── Assignment_1/                  # HW1: Synthetic Video Game RecSys + LDA Segment Discovery
 │   ├── Assignment_1_Kitsakis.ipynb
-│   └── Assignment_1_Kitsakis_Colab.ipynb
+│   ├── Assignment_1_Kitsakis_Colab.ipynb
+│   └── Assignment_1_Games.pdf
 └── README.md
 ```
 
@@ -192,6 +193,7 @@ generate_entities()  →  200 synthetic video games
 generate_users()     →  1,000 users across 5 segments (200 each)
 generate_ratings()   →  binary like/dislike ratings with configurable noise %
 learn_segments()     →  LDA with anchor words to recover the 5 segments
+                     →  accuracy evaluation: how well recovered segments match ground truth
 ```
 
 ### Two-Phase Approach (`Assignment_1_Kitsakis_Colab.ipynb`)
@@ -202,7 +204,7 @@ The notebook runs both phases back to back for direct comparison of LDA segment 
 
 **Phase 2 — Full criteria:** Multi-attribute conditions (platform + Metacritic + playtime + genre + age rating). Gives LDA richer, more distinctive signals per segment.
 
-**Key Insight:** Phase 2's richer criteria produce more distinctive rating patterns, allowing LDA (with anchor words) to recover the 5 segments far more cleanly than Phase 1's broad signals.
+**Key Insight:** Phase 2's richer criteria produce more distinctive rating patterns, allowing LDA (with anchor words) to recover the 5 segments far more cleanly than Phase 1's broad signals. Segment recovery accuracy is measured by comparing LDA-assigned topics to ground truth segment labels.
 
 ---
 

@@ -118,11 +118,12 @@ Collaborative filtering, content-based recommendations, topic modeling, and user
 ![SBERT](https://img.shields.io/badge/SBERT-Embeddings-orange.svg)
 
 ### [Deep Learning](Deep_Learning/)
-Neural networks from MLPs to CNNs, transfer learning with VGG19, optimizer comparison studies, and final assignment on CIFAR-10 & Fashion-MNIST classification
+Neural networks from MLPs to CNNs, transfer learning with VGG19/ResNet/DenseNet/EfficientNet, optimizer comparisons, Kaggle toxicity classification, and a two-part final assignment on CIFAR-10, Fashion-MNIST and MURA X-ray abnormality detection
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.19-orange.svg)
 ![Keras](https://img.shields.io/badge/Keras-Functional_API-red.svg)
+![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF.svg)
 
 ---
 

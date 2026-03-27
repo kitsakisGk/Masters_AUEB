@@ -47,6 +47,8 @@ Recommender_Systems/
 │   └── Restaurant_Rating_Generator_professor.ipynb
 ├── Week_6/                        # Two Towers Retrieval Model
 │   └── 2Towers.ipynb
+├── Week_7/                        # Two Towers with Genre Embeddings
+│   └── 2TowersGenre.ipynb
 ├── Assignment_1/                  # HW1: Synthetic Video Game RecSys + LDA Segment Discovery
 │   ├── Assignment_1_Kitsakis.ipynb
 │   ├── Assignment_1_Kitsakis_Colab.ipynb
@@ -168,6 +170,21 @@ Toy Story → Toy Story 2 (score: 4.45)
 
 ---
 
+## 🎯 Week 7: Two Towers with Genre Embeddings
+
+### Two-Tower + Genre Model (`2TowersGenre.ipynb`)
+
+**Concept:** Extension of the Week 6 Two Towers model that adds **genre embeddings** alongside user and movie embeddings. The model now learns to factor in genre preferences when scoring user-movie pairs, giving it richer signals beyond pure collaborative filtering.
+
+**Dataset:** MovieLens 100K — same as Week 6
+
+**Enhancement over Week 6:**
+- Each movie is represented by both its title embedding and a genre embedding
+- The model learns genre-level preferences per user, capturing that a user who likes action movies will score unseen action movies higher even without direct interactions
+- Training still uses BPR (Bayesian Personalised Ranking) with negative sampling
+
+---
+
 ## 📝 Assignment 1: Video Game RecSys + LDA Segment Discovery
 
 **Domain:** PC & PlayStation video games
@@ -276,6 +293,12 @@ pip install pandas numpy scikit-learn tomotopy sentence-transformers torch jupyt
 
 # Week 5 — Restaurant segmentation
 # Week_5/Restaurant_Rating_Generator.ipynb
+
+# Week 6 — Two Towers retrieval model
+# Week_6/2Towers.ipynb
+
+# Week 7 — Two Towers with genre embeddings
+# Week_7/2TowersGenre.ipynb
 
 # Assignment 1 — Video game RecSys + LDA segment discovery (Google Colab)
 # Assignment_1/Assignment_1_Kitsakis_Colab.ipynb  ← both phases included

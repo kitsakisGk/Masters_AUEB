@@ -118,25 +118,60 @@ Hands-on exploration of deep learning architectures using TensorFlow/Keras. The 
 
 ---
 
+### 4. Kaggle Toxicity Classification (`Kaggle_Toxicity.ipynb/`)
+
+**Task:** Classify toxic comments from the Jigsaw Toxic Comment Classification Challenge.
+
+**Approach:** Deep learning-based text classification using TensorFlow/Keras with embedding layers and sequence models.
+
+---
+
+### 5. Final Assignment — Image Classification Project (`Assignment/`)
+
+A two-part image classification project covering standard benchmarks and real-world medical/natural image datasets.
+
+#### Part 1 (`Assignment/image-classification-project/Part_1/`)
+
+MLP and CNN architectures compared on CIFAR-10 and Fashion-MNIST, including ResNet transfer learning.
+
+#### Part 2 (`Assignment/image-classification-project/Part_2/`)
+
+MURA X-ray abnormality classification using CNN, DenseNet, EfficientNet, and a custom dual-backbone architecture. Includes both Kitsakis and Mike versions.
+
+**Full report:** `Assignment/image-classification-project/report.pdf`
+
+---
+
 ## Repository Structure
 
 ```
 Deep_Learning/
 ├── README.md
-├── Deep-Regression.ipynb           # XOR regression with optimizer comparisons
+├── Deep-Regression.ipynb                    # XOR regression with optimizer comparisons
+├── Kaggle_Toxicity.ipynb/
+│   └── Kaggle_Toxicity.ipynb                # Toxic comment classification
 ├── MNIST-Classification/
-│   ├── Mnist-MLP.ipynb             # MLP approach (SGD vs Adam)
-│   └── Mnist-CNN.ipynb             # CNN with dropout & early stopping
-└── CIFAR-100-Classification/
-    └── CIFAR-CNN.ipynb             # VGG19 transfer learning
+│   ├── Mnist-MLP.ipynb                      # MLP approach (SGD vs Adam)
+│   └── Mnist-CNN.ipynb                      # CNN with dropout & early stopping
+├── CIFAR-100-Classification/
+│   └── CIFAR-CNN.ipynb                      # VGG19 transfer learning
+└── Assignment/
+    └── image-classification-project/
+        ├── README.md
+        ├── report.pdf
+        ├── Part_1/                          # CIFAR-10 & Fashion-MNIST MLP/CNN/ResNet
+        ├── Part_2/                          # MURA X-ray classification
+        │   ├── Kitsakis/                    # CNN, DenseNet, EfficientNet, dual backbone
+        │   └── Mike/                        # Alternative approach
+        └── screenshots/                     # Training curves & results
 ```
 
 ## Technologies & Concepts
 
 - **Framework:** TensorFlow 2.19, Keras Functional API
-- **Architectures:** MLP, CNN (Conv2D, MaxPool2D), VGG19 (Transfer Learning)
+- **Architectures:** MLP, CNN, VGG19, ResNet, DenseNet, EfficientNet, dual-backbone
 - **Optimizers:** SGD, SGD + Momentum, SGD + Nesterov, RMSprop, Adam
-- **Regularization:** Dropout, Early Stopping (patience tuning)
-- **Training:** Two-phase fine-tuning, learning rate comparison, batch training
-- **Datasets:** MNIST (60K/10K), CIFAR-100 (50K/10K), Synthetic XOR
-- **Environment:** Google Colab with GPU acceleration
+- **Regularization:** Dropout, Early Stopping, BatchNormalization
+- **Training:** Two-phase fine-tuning, transfer learning, learning rate comparison
+- **Datasets:** MNIST, CIFAR-10, CIFAR-100, Fashion-MNIST, MURA X-ray, Jigsaw Toxicity
+- **Environment:** Google Colab with GPU acceleration / Local

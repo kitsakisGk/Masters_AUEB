@@ -34,11 +34,12 @@ Comprehensive ML Course: From Linear Models to Deep Learning
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)
 
 ### [Advanced Customer Analytics](Advanced_Customer_Analytics/)
-Customer segmentation, RFM analysis, predictive modeling, and customer lifetime value
+Customer segmentation, RFM analysis, predictive modeling, customer lifetime value, and RAG-powered Q&A pipeline
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![pandas](https://img.shields.io/badge/pandas-grey.svg)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-orange.svg)
+![RAG](https://img.shields.io/badge/RAG-Pipeline-purple.svg)
 
 ### [Data Visualization](Data_visualization/)
 Advanced visualization techniques and interactive dashboards - PISA 2018 Analysis

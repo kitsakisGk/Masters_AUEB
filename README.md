@@ -111,12 +111,13 @@ Data protection, AI ethics, GDPR compliance, and fundamental rights
 ![EU AI Act](https://img.shields.io/badge/EU_AI_Act-purple.svg)
 
 ### [Recommender Systems](Recommender_Systems/)
-Collaborative filtering, content-based recommendations, topic modeling, and user segmentation with LDA segment discovery
+Collaborative filtering, content-based recommendations, topic modeling, LDA segment discovery, Two Towers retrieval model with genre embeddings, and video game RecSys assignment
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![LDA](https://img.shields.io/badge/LDA-Topic_Modeling-green.svg)
 ![MovieLens](https://img.shields.io/badge/MovieLens-Dataset-red.svg)
 ![SBERT](https://img.shields.io/badge/SBERT-Embeddings-orange.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-Two_Towers-red.svg)
 
 ### [Deep Learning](Deep_Learning/)
 Neural networks from MLPs to CNNs, transfer learning with VGG19/ResNet/DenseNet/EfficientNet, optimizer comparisons, Kaggle toxicity classification, and a two-part final assignment on CIFAR-10, Fashion-MNIST and MURA X-ray abnormality detection

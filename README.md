@@ -34,12 +34,11 @@ Comprehensive ML Course: From Linear Models to Deep Learning
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)
 
 ### [Advanced Customer Analytics](Advanced_Customer_Analytics/)
-Customer segmentation, RFM analysis, predictive modeling, customer lifetime value, and RAG-powered Q&A pipeline
+Customer segmentation, predictive modeling, and RAG pipeline
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![pandas](https://img.shields.io/badge/pandas-grey.svg)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-orange.svg)
-![RAG](https://img.shields.io/badge/RAG-Pipeline-purple.svg)
 
 ### [Data Visualization](Data_visualization/)
 Advanced visualization techniques and interactive dashboards - PISA 2018 Analysis
@@ -111,13 +110,12 @@ Data protection, AI ethics, GDPR compliance, and fundamental rights
 ![EU AI Act](https://img.shields.io/badge/EU_AI_Act-purple.svg)
 
 ### [Recommender Systems](Recommender_Systems/)
-Collaborative filtering, content-based recommendations, topic modeling, LDA segment discovery, Two Towers retrieval model with genre embeddings, and video game RecSys assignment
+Collaborative filtering, LDA segment discovery, and Two Towers retrieval model
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![LDA](https://img.shields.io/badge/LDA-Topic_Modeling-green.svg)
 ![MovieLens](https://img.shields.io/badge/MovieLens-Dataset-red.svg)
-![SBERT](https://img.shields.io/badge/SBERT-Embeddings-orange.svg)
-![PyTorch](https://img.shields.io/badge/PyTorch-Two_Towers-red.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-grey.svg)
 
 ### [Deep Learning](Deep_Learning/)
 Neural networks from MLPs to CNNs, transfer learning with VGG19/ResNet/DenseNet/EfficientNet, optimizer comparisons, Kaggle toxicity classification, and a two-part final assignment on CIFAR-10, Fashion-MNIST and MURA X-ray abnormality detection

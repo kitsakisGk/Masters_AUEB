@@ -53,6 +53,12 @@ Recommender_Systems/
 │   ├── Assignment_1_Kitsakis.ipynb
 │   ├── Assignment_1_Kitsakis_Colab.ipynb
 │   └── Assignment_1_Games.pdf
+├── Assignment_2/                  # HW2: Multi-Modal Two-Tower on MyAnimeList
+│   ├── Assignment_2_Kitsakis.ipynb
+│   ├── Assignment_2_Kitsakis_Colab.ipynb
+│   ├── Assignment_2_Colab_Prof.ipynb
+│   ├── Assignment_2_Anime.md
+│   └── README.md
 └── README.md
 ```
 
@@ -225,6 +231,31 @@ The notebook runs both phases back to back for direct comparison of LDA segment 
 
 ---
 
+## 📝 Assignment 2: Multi-Modal Two-Tower on MyAnimeList
+
+**Domain:** Anime recommendations (MyAnimeList dataset — ~12k anime, ~7.8M ratings)
+**Task:** Build a Two-Tower retrieval model where the item tower fuses categorical, numerical, and text features using learned weights.
+
+**Architecture:**
+- **User Tower** — user ID embedding + mean rating scalar → MLP → 64-dim vector
+- **Item Tower (late fusion)** — three separate branches (categorical embeddings, numerical MLP, TF-IDF + SVD text) combined with learned attention weights → 64-dim vector
+- **Scoring** — dot product; trained with BPR + negative sampling
+
+**Results (10 epochs):**
+
+| Metric | Score |
+|---|---|
+| Recall@10 | 3.15% |
+| Recall@20 | 6.44% |
+| Recall@50 | 15.40% |
+| NDCG@10 | 1.35% |
+
+**Learned fusion weights:** Text: 0.673 — Numerical: 0.302 — Categorical: 0.025
+
+**Key Insight:** The model discovers that title text (TF-IDF + SVD) carries the most signal for anime retrieval, far outweighing categorical genre embeddings — a non-obvious result that emerges from learned fusion rather than manual feature engineering.
+
+---
+
 ## 🎯 Week 6: Two Towers Retrieval Model
 
 ### Two-Tower Model (`2Towers.ipynb`)
@@ -318,6 +349,7 @@ pip install pandas numpy scikit-learn tomotopy sentence-transformers torch jupyt
 8. **Richer rating criteria** produce more distinctive LDA topics and cleaner segment recovery than broad simple rules
 9. **Two Towers** scales to millions of items via learned embeddings and approximate nearest neighbour search
 10. **Hybrid approaches** combining multiple signals consistently outperform any single method
+11. **Learned fusion weights** in multi-modal towers reveal which feature types matter most — often surprising (e.g. text > genre embeddings for anime retrieval)
 
 ---
 

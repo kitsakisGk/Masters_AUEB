@@ -110,7 +110,7 @@ Data protection, AI ethics, GDPR compliance, and fundamental rights
 ![EU AI Act](https://img.shields.io/badge/EU_AI_Act-purple.svg)
 
 ### [Recommender Systems](Recommender_Systems/)
-Collaborative filtering, LDA segment discovery, and Two Towers retrieval model
+Collaborative filtering, LDA segment discovery, Two Towers retrieval, and multi-modal anime recommendations
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![LDA](https://img.shields.io/badge/LDA-Topic_Modeling-green.svg)

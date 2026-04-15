@@ -1,0 +1,26 @@
+Στοιχεία εργασίας
+Τίτλος
+Homework: Multi-Modal Two-Tower Recommendation System
+Περιγραφή
+Objective
+In class, we explored a Two-Tower Retrieval Model using the MovieLens 100K dataset.
+ 
+For this assignment, you will build a similarTwo-Tower model. You must find a real-world dataset and incorporate three different types of features into your item (and/or user) tower:
+1.  Categorical Features (e.g., brand, category, genre)
+2.  Numerical Features (e.g., price, age, duration, year released)
+3.  Text Features (e.g., item description, user review, product title)
+ 
+Find a dataset that contains user-item interactions (e.g., purchases, clicks, ratings) and rich metadata for the items (and optionally users) and declare it here. The same dataset cannot be used for 2 submissions.
+ 
+Submit a link to Colab notebook that completes the following 3 Tasks.
+ 
+Task 1: Data Preprocessing
+Prepare your data for the neural network. 
+ 
+Task 2: Multi-Modal Two-Tower Architecture
+Build your PyTorch model. 
+*   User Tower: At minimum, learn an embedding for the `user_id`.
+*   Item Tower: This tower must aggregate your multimodal features: at least 1 numeric, at least 1 categorical, at least 1 text. Item ids can be used but do not count towards these 3.
+   
+Task 3: Evaluation
+Properly Evaluate your model on a held-out test set.

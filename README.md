@@ -211,7 +211,7 @@ MLPs, CNNs, transfer learning, and image classification assignments
 
 **Georgios Kitsakis**
 Athens University of Economics and Business (AUEB)
-MSc in Data Science
+MSc in Data Science  newwww
 
 ---
 

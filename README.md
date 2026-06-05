@@ -18,8 +18,6 @@
 
 ---
 
-Final Grade : 8.14
-
 ## 📚 Course Repository
 
 This repository contains all projects, assignments, and coursework from my Master's program in Data Science at AUEB. Each course includes comprehensive implementations, analyses, and documentation.

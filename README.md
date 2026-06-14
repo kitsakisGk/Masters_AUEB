@@ -207,6 +207,25 @@ MLPs, CNNs, transfer learning, and image classification assignments
 - **BERTopic** - Topic modeling with transformers
 - **CLIP** - Multimodal embeddings (OpenAI)
 
+## 🎓 Is the MSc Worth It? My Honest Take
+
+Having gone through the program, here's my personal opinion for anyone considering it:
+
+**The good:**
+- You genuinely learn a lot. The program covers a wide range of topics and gives you solid foundations across ML, statistics, data engineering, NLP, and more.
+- Heavy on the math behind everything — if you want to understand *why* algorithms work, not just use them, this is valuable.
+- Good opportunity to build connections with peers and professors in the field.
+
+**The not so good:**
+- Some courses cover older or past technologies that are less relevant to where the industry is heading. That's something to keep in mind if you're optimizing for cutting-edge skills.
+- It is expensive. The cost-benefit is something you need to weigh carefully.
+
+**Bottom line:** Worth doing, but go in with realistic expectations about the investment. If you're serious about data science and want both the theoretical depth and the credentials, it delivers.
+
+**Standout courses:** [Recommender Systems](Recommender_Systems/) and [Advanced Customer Analytics](Advanced_Customer_Analytics/) are the highlights of the program — highly practical, well-structured, and directly applicable to real industry problems.
+
+---
+
 ## 📫 Contact
 
 **Georgios Kitsakis**
